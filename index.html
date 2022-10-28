@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -18,199 +19,285 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">SolidPlus</a>
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container">
+                <a class="navbar-brand text-primary fs-4" href="#">SolidPlus</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                <div class="collapse navbar-collapse py-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                        <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="#">DIENSTEN</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">BRANCHES</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">PROJECTEN</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">NIEUWS</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#">OVER ONS</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-primary" type="submit">Neem contact op</button>
+                    <button class="btn btn-outline-primary ms-4" type="submit">Neem contact op</button>
                 </div>
             </div>
         </nav>
-        <div>
-            <h1>Creatieve ingenieurs met passie voor techek</h1>
-            <div>
-                <button class="btn btn-primary" type="submit">Meer over Solidplus</button>
-                <button class="btn btn-outline-primary" type="submit">Neem contact op</button>
+
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 ">
+                        <h1 class="text-white hero-text">Creatieve ingenieurs met <br /> passie voor techek</h1>
+                        <div class="mt-4 pt-4">
+                            <button class="btn btn-primary me-2 px-4 py-2" type="submit">Meer over Solidplus</button>
+                            <button class="btn btn-outline-primary px-4 py-2" type="submit">Neem contact op</button>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img class="hero-item" src="/assets/images/building.png" alt="building" width="500px">
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="row">
-            <div class="col">
-                <h2>
-                    Hoe kunnen wij je helpen?
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique sint provident ipsam nemo
-                    suscipit quas sapiente modi, quos aspernatur!
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col">
+                    <h2>
+                        Hoe kunnen wij je helpen?
+                    </h2>
+                    <p class="text-justify mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem placeat ratione, accusamus
+                        accusantium vero tempora id delectus exercitationem sint dolor quo natus? Rem, repudiandae
+                        accusantium. Aspernatur ea commodi natus. Asperiores.
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem placeat ratione, accusamus
+                        accusantium vero tempora id delectus exercitationem sint dolor quo natus? Rem, repudiandae
+                        accusantium. Aspernatur ea commodi natus. Asperiores.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-center fs-5">ONZE KLANTEN</h2>
+                    <div class="d-flex flex-column align-items-center mt-4">
+                        <div class="d-flex">
+                            <img class="mx-3" src="/assets/images/logo.png" alt="logo 1" width="100px">
+                            <img class="mx-3" src="/assets/images/logo.png" alt="logo 1" width="100px">
+                        </div>
+                        <div class="d-flex">
+                            <img class="mx-3" src="/assets/images/logo.png" alt="logo 1" width="100px">
+                            <img class="mx-3" src="/assets/images/logo.png" alt="logo 1" width="100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4 my-4">
+            <div class="col d-flex flex-column align-items-center">
+                <div class="service-card">
+                    <h3 class="fs-5">Diensten</h3>
+                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde
+                        quos sapiente
+                        voluptatem ullam repellat praesentium minus quibusdam a.</p>
+                    <button class="btn btn-primary mt-3" type="submit">Bekijk al onze diensten</button>
+                </div>
+            </div>
+            <div class="col d-flex flex-column align-items-center mt-3">
+                <div class="service-card">
+                    <h3 class="fs-5">Branches</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
+                        voluptatem ullam repellat praesentium minus quibusdam a.</p>
+                    <button class="btn btn-primary mt-3" type="submit">Bekijk al onze diensten</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4 my-4">
+            <div class="row">
+                <div class="col me-4 pe-4">
+                    <h2>Bedenken, tekenen an realiseren. <br />Solidplus ondersteunt van A tot Z</h2>
+                    <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                        laudantium
+                        similique nulla
+                        velit voluptatum sunt ducimus voluptas harum maxime nihil inventore, eligendi recusandae ratione
+                        iste eaque saepe eius, temporibus dolorem?
+                        <br /><br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora sequi quasi alias
+                        laudantium asperiores voluptates quae quos doloremque, est sapiente nostrum maxime perferendis,
+                        accusamus omnis quam sit? Eligendi, dolorem?
+                    </p>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled ps-4 ms-4">
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Korte lijnen</li>
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Flexibel</li>
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Praktische kennis</li>
+                        <li class="fs-5 ms-4 mt-4">Krachtige software</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-main py-4 my-4">
+            <div class="container">
+                <h2>ONZE WEKWIJZE</h2>
+                <p class="text-justify mt-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laborum,
+                    accusamus
+                    cum
+                    doloremque quo velit
+                    assumenda officia quis! Aliquam nemo laborum omnis quidem dolores est consectetur id vel ex sequi
+                    nobis
+                    dolorem, nesciunt necessitatibus explicabo saepe libero iste corporis aut quam iusto quia sed? Qui
+                    dolore quia aut, ea praesentium quos!</p>
+                <button class="btn btn-primary mt-4" type="submit">Ontdek onze wekwijze</button>
+
+                <div class="row mt-4 pt-4">
+                    <div class="col">
+                        <div class="service-card bg-white">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
+                                voluptatem ullam repellat praesentium minus quibusdam a.</p>
+                            <p class="mb-0">Klant recentie1</p>
+                            <p class="text-primary">Klant recentie1</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card bg-white">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
+                                voluptatem ullam repellat praesentium minus quibusdam a.</p>
+                            <p class="mb-0">Klant recentie1</p>
+                            <p class="text-primary">Klant recentie1</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-card bg-white">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
+                                voluptatem ullam repellat praesentium minus quibusdam a.</p>
+                            <p class="mb-0">Klant recentie1</p>
+                            <p class="text-primary">Klant recentie1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contact-card">
+                <div class="row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <img src="/assets/images/man.jpg" alt="contact" width="400px">
+                    </div>
+                    <div class="col">
+                        <h2>Neem vandaag nog contact <br />met ons op</h2>
+                        <form class="mt-4">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="name" class="form-label">Naam</label>
+                                    <input type="text" class="form-control" id="name">
+
+                                </div>
+                                <div class="col">
+                                    <label for="telephone" class="form-label">Telefoonnumber</label>
+                                    <input type="text" class="form-control" id="telephone">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="Bedrijf" class="form-label">Bedrijf</label>
+                                    <input type="text" class="form-control" id="Bedrijf" aria-describedby="emailHelp">
+                                </div>
+                                <div class="col">
+                                    <label for="email" class="form-label">E-mailadres</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+
+                            <select class="form-select my-4" aria-label="Default select example">
+                                <option selected>Reden Contact</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Uw bericht</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bg-footer text-white">
+            <div class="footer-contenr">
+                <div class="d-flex justify-content-between mb-4">
+                    <div>
+                        <h2 class="fs-5">Contact ons</h2>
+                        <div class="flex">
+                            <p>
+                                info@devoteq.com
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <p>
+                                085 876 9088
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <p>
+                                Pesetaweg 67A, 2153 Pj Nieuw-Vennep
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <p>
+                                Mastwijkerdijk 108, 3417 BT Montfoort
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="fs-5">Diensten</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Engineeering</li>
+                            <li class="mb-2">Productontwikkeling</li>
+                            <li class="mb-2">Detachering</li>
+                            <li class="mb-2">Sterkteberekeningen</li>
+                            <li class="mb-2">SolidWorks Tekenaar</li>
+                            <li class="mb-2">Machinebouw en automatisering</li>
+                            <li class="mb-2">Ingenieursbureau</li>
+                            <li class="mb-2">Vacature mechanical enginner</li>
+                        </ul>
+                    </div>
+                    <div class="pe-4 me-4">
+                        <h2 class="fs-5">Sitemap</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Portfolio</li>
+                            <li class="mb-2">Over ons</li>
+                            <li class="mb-2">Vacatures</li>
+                            <li class="mb-2">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">
+                    2012-2022 Deboteq | All rights reserved
                 </p>
             </div>
-            <div class="col">
-                <h2>ONZE KLANTEN</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <h3>Diensten</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
-                        voluptatem ullam repellat praesentium minus quibusdam a.</p>
-                    <button class="btn btn-primary" type="submit">Bekijk al onze diensten</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <h3>Branches</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
-                        voluptatem ullam repellat praesentium minus quibusdam a.</p>
-                    <button class="btn btn-primary" type="submit">Bekijk al onze diensten</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <h2>Bedenken, tekenen an realiseren. Solidplus ondersteunt van A tot Z</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi dignissimos dolorem non
-                    consequatur repellendus magnam, nam labore reprehenderit placeat.</p>
-            </div>
-            <div class="col">
-                <ul>
-                    <li>Korte lijnen</li>
-                    <li>Flexibel</li>
-                    <li>Praktische kennis</li>
-                    <li>Krachtige software</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div>
-            <h2>ONZE WEKWIJZE</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusamus cum doloremque quo velit
-                assumenda officia quis! Aliquam nemo laborum omnis quidem dolores est consectetur id vel ex sequi nobis
-                dolorem, nesciunt necessitatibus explicabo saepe libero iste corporis aut quam iusto quia sed? Qui
-                dolore quia aut, ea praesentium quos!</p>
-            <button class="btn btn-primary" type="submit">Ontdek onze wekwijze</button>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
-                            voluptatem ullam repellat praesentium minus quibusdam a.</p>
-                        <p>Klant recentie1</p>
-                        <p>Klant recentie1</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
-                            voluptatem ullam repellat praesentium minus quibusdam a.</p>
-                        <p>Klant recentie1</p>
-                        <p>Klant recentie1</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
-                            voluptatem ullam repellat praesentium minus quibusdam a.</p>
-                        <p>Klant recentie1</p>
-                        <p>Klant recentie1</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                    <h2>Neem vandaag nog contact met ons op</h2>
-                    <form action="">
-                        <div class="row">
-                            <div class="col"></div>
-                            <div class="col"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-        <footer>
-            <div class="row">
-                <div class="col">
-                    <h2>Contact ons</h2>
-                    <div class="flex">
-                        <p>
-                            info@devoteq.com
-                        </p>
-                    </div>
-                    <div class="flex">
-                        <p>
-                            085 876 9088
-                        </p>
-                    </div>
-                    <div class="flex">
-                        <p>
-                            Pesetaweg 67A, 2153 Pj Nieuw-Vennep
-                        </p>
-                    </div>
-                    <div class="flex">
-                        <p>
-                            Mastwijkerdijk 108, 3417 BT Montfoort
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <h2>Diensten</h2>
-                    <ul>
-                        <li>Engineeering</li>
-                        <li>Productontwikkeling</li>
-                        <li>Detachering</li>
-                        <li>Sterkteberekeningen</li>
-                        <li>SolidWorks Tekenaar</li>
-                        <li>Machinebouw en automatisering</li>
-                        <li>Ingenieursbureau</li>
-                        <li>Vacature mechanical enginner</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h2>Sitemap</h2>
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>Over ons</li>
-                        <li>Vacatures</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            2012-2022 Deboteq | All rights reserved
         </footer>
     </main>
 

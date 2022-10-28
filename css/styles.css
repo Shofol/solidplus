@@ -1,0 +1,61 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+.bg-main {
+  background: #101e24;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("/assets/images/heroBg.svg") no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-top: 8rem;
+}
+
+.hero-item {
+  margin-top: 8rem;
+}
+
+.btn-primary {
+  background: #479cd9 !important;
+}
+
+.btn-outline-primary {
+  color: #479cd9 !important;
+  border-color: #479cd9 !important;
+}
+
+.service-card {
+  max-width: 350px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  padding: 4rem;
+  margin: 5rem 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.bg-footer {
+  background: #050046;
+}
+
+.footer-contenr {
+  max-width: 70vw;
+  margin: auto;
+  padding: 6rem 0;
+}
