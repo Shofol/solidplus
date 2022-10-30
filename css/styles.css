@@ -31,6 +31,11 @@ html {
   border-color: #479cd9 !important;
 }
 
+.btn-outline-primary:hover {
+  background: #479cd9 !important;
+  color: white !important;
+}
+
 .service-card {
   max-width: 350px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
