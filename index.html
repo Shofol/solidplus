@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -21,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light ">
             <div class="container">
-                <a class="navbar-brand text-primary fs-4" href="#">SolidPlus</a>
+                <a class="navbar-brand text-soli-primary fs-4" href="#">SolidPlus</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +78,7 @@
                     <h2>
                         Hoe kunnen wij je helpen?
                     </h2>
-                    <p class="text-justify mt-4">
+                    <p class="text-justify mt-4 help-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem placeat ratione, accusamus
                         accusantium vero tempora id delectus exercitationem sint dolor quo natus? Rem, repudiandae
                         accusantium. Aspernatur ea commodi natus. Asperiores.
@@ -89,7 +90,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-center fs-5">ONZE KLANTEN</h2>
+                    <h2 class="text-center fs-5 text-orange">ONZE KLANTEN</h2>
                     <div class="d-flex flex-column align-items-center mt-4">
                         <div class="d-flex">
                             <img class="mx-3" src="/assets/images/logo.png" alt="logo 1" width="100px">
@@ -103,11 +104,11 @@
                 </div>
             </div>
         </div>
-        <div class="relative">
+        <div class="relative curved-section">
             <div class="curved-bg"></div>
             <div class="row py-4 my-4">
                 <div class="col-md-6 d-flex flex-column align-items-center mb-4 mb-md-0">
-                    <div class="service-card">
+                    <div class="service-card mt-6">
                         <h3 class="fs-5">Diensten</h3>
                         <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque
                             unde
@@ -117,7 +118,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center mt-4 mt-md-3">
-                    <div class="service-card">
+                    <div class="service-card mt-6">
                         <h3 class="fs-5">Branches</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
                             voluptatem ullam repellat praesentium minus quibusdam a.</p>
@@ -129,9 +130,10 @@
 
         <div class="container py-4 my-4">
             <div class="row">
-                <div class="col-md-6 me-4 pe-4">
+                <div class="col-md-6 me-4 pe-4 me-md-0">
                     <h2>Bedenken, tekenen an realiseren. <br />Solidplus ondersteunt van A tot Z</h2>
-                    <p class="mt-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    <p class="mt-4 text-justify pe-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti
                         laudantium
                         similique nulla
                         velit voluptatum sunt ducimus voluptas harum maxime nihil inventore, eligendi recusandae ratione
@@ -144,19 +146,30 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list-unstyled ps-md-4 ms-md-4">
-                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Korte lijnen</li>
-                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Flexibel</li>
-                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4">Praktische kennis</li>
-                        <li class="fs-5 ms-4 mt-4">Krachtige software</li>
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4"><i
+                                class="fa-solid fa-check pe-4 fw-bold text-lgreen"></i>Korte lijnen
+                        </li>
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4"><i
+                                class="fa-solid fa-check pe-4 fw-bold text-lgreen"></i>Flexibel
+                        </li>
+                        <li class="fs-5 ms-4 mt-4 border-bottom pb-4"><i
+                                class="fa-solid fa-check pe-4 fw-bold text-lgreen"></i>Praktische
+                            kennis
+                        </li>
+                        <li class="fs-5 ms-4 mt-4"><i class="fa-solid fa-check pe-4 fw-bold text-lgreen"></i>Krachtige
+                            software
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="bg-main py-4 my-4">
+        <div class="relative py-4 my-4 mt-5">
+            <div class="onze-bg"></div>
             <div class="container">
-                <h2>ONZE WEKWIJZE</h2>
-                <p class="text-justify mt-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <h2 class="text-orange pt-4 fs-5">ONZE WEKWIJZE</h2>
+                <p class="text-justify mt-4 text-white onze-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit.
                     Laborum,
                     accusamus
                     cum
@@ -169,27 +182,27 @@
 
                 <div class="row mt-4 pt-4">
                     <div class="col-md-4 mb-4">
-                        <div class="service-card bg-white mx-auto">
+                        <div class="service-card bg-white mx-auto mx-md-0">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
                                 voluptatem ullam repellat praesentium minus quibusdam a.</p>
                             <p class="mb-0">Klant recentie1</p>
-                            <p class="text-primary">Klant recentie1</p>
+                            <p class="text-soli-primary">Klant recentie1</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="service-card bg-white mx-auto">
+                        <div class="service-card bg-white mx-auto mx-md-0">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
                                 voluptatem ullam repellat praesentium minus quibusdam a.</p>
                             <p class="mb-0">Klant recentie1</p>
-                            <p class="text-primary">Klant recentie1</p>
+                            <p class="text-soli-primary">Klant recentie1</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="service-card bg-white mx-auto">
+                        <div class="service-card bg-white mx-auto mx-md-0">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque unde quos sapiente
                                 voluptatem ullam repellat praesentium minus quibusdam a.</p>
                             <p class="mb-0">Klant recentie1</p>
-                            <p class="text-primary">Klant recentie1</p>
+                            <p class="text-soli-primary">Klant recentie1</p>
                         </div>
                     </div>
                 </div>
@@ -204,7 +217,7 @@
                     </div>
                     <div class="col">
                         <h2>Neem vandaag nog contact <br />met ons op</h2>
-                        <form class="mt-4">
+                        <form class="mt-4 pt-4">
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="name" class="form-label">Naam</label>
@@ -239,8 +252,9 @@
                                 <label for="exampleFormControlTextarea1" class="form-label">Uw bericht</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary px-4 py-3">Verstuur je bericht</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -253,24 +267,33 @@
                 <div class="d-flex justify-content-between mb-4">
                     <div>
                         <h2 class="fs-5">Contact ons</h2>
-                        <div class="flex">
-                            <p>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-regular fa-envelope text-dark bg-white icon"></i>
+                            <p class="mt-3 ms-2">
                                 info@devoteq.com
                             </p>
                         </div>
-                        <div class="flex">
-                            <p>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone text-dark bg-white icon"></i>
+                            <p class="mt-3 ms-2">
                                 085 876 9088
                             </p>
                         </div>
-                        <div class="flex">
-                            <p>
-                                Pesetaweg 67A, 2153 Pj Nieuw-Vennep
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <i class="fa fa-map-marker text-dark bg-white icon"></i>
+                            </div>
+                            <p class="mt-3 ms-2">
+                                Pesetaweg 67A, 2153 Pj
+                                Nieuw-Vennep
                             </p>
                         </div>
-                        <div class="flex">
-                            <p>
-                                Mastwijkerdijk 108, 3417 BT Montfoort
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-map-marker text-dark bg-white icon"></i>
+                            <p class="mt-3 ms-2">
+                                Mastwijkerdijk 108, 3417
+                                BT
+                                Montfoort
                             </p>
                         </div>
                     </div>
@@ -301,6 +324,14 @@
                 <p class="text-center">
                     2012-2022 Deboteq | All rights reserved
                 </p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="social-icon me-md-4">
+                        <i class="fa-brands text-dark fa-linkedin-in "></i>
+                    </div>
+                    <div class="social-icon ms-md-4">
+                        <i class="fa-brands text-dark fa-youtube"></i>
+                    </div>
+                </div>
             </div>
         </footer>
     </main>

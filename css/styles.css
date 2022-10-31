@@ -3,8 +3,13 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --dark: #101e24;
+  --light-green: #0dcea0;
+}
+
 .bg-main {
-  background: #101e24;
+  background: var(--dark);
 }
 
 .hero {
@@ -26,8 +31,20 @@ html {
   background: #479cd9 !important;
 }
 
-.text-primary {
+.text-soli-primary {
   color: #479cd9 !important;
+}
+
+.text-orange {
+  color: #ff6331;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-lgreen {
+  color: var(--light-green);
 }
 
 .btn-outline-primary {
@@ -47,6 +64,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
 }
 
 .contact-card {
@@ -79,6 +97,82 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background: red;
+  background: url("/assets/images/building.png");
   transform: skew(0, 6deg);
+  z-index: -1;
+}
+
+.curved-section {
+  padding: 2rem;
+  margin: 10rem 0;
+  max-height: 25rem;
+}
+
+.onze-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
+  transform: skew(0, 5deg);
+  z-index: -1;
+  max-height: 30rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+.form-control,
+.form-select {
+  border: none !important;
+  border-bottom: 1px solid #b0b3c7 !important;
+  border-radius: 0% !important;
+}
+
+.form-select {
+  padding: 0.5rem 0 !important;
+}
+
+@media only screen and (min-width: 769px) {
+  .help-text {
+    margin-right: 10rem;
+  }
+  .onze-text {
+    max-width: 52vw;
+  }
 }
