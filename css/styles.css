@@ -6,6 +6,8 @@ html {
 :root {
   --dark: #101e24;
   --light-green: #0dcea0;
+  --gray: #586482;
+  --light-gray: #dee3db;
 }
 
 .bg-main {
@@ -47,6 +49,14 @@ html {
   color: var(--dark);
 }
 
+.text-gray {
+  color: var(--gray);
+}
+
+.text-lgray {
+  color: var(--light-gray);
+}
+
 .text-lgreen {
   color: var(--light-green);
 }
@@ -71,6 +81,15 @@ html {
   background: white;
 }
 
+.klant-card {
+  max-width: 350px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
 .contact-card {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   padding: 4rem;
@@ -86,7 +105,7 @@ html {
 }
 
 .footer-contenr {
-  max-width: 70vw;
+  max-width: 90vw;
   margin: auto;
   padding: 6rem 0;
 }
@@ -116,6 +135,10 @@ html {
   padding: 2rem;
   margin: 10rem 0 0 0;
   min-height: 20rem;
+}
+
+.curved-section-service {
+  margin-top: 27rem;
 }
 
 .curved-bg-dark {
@@ -195,11 +218,73 @@ label {
   background: url("/assets/images/building.png");
 }
 
+.social-icon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bedenken-section {
+  margin-top: 17rem !important;
+}
+
+.social-icon:nth-child(1) {
+  margin-right: 6rem;
+}
+.social-icon:nth-child(2) {
+  margin-left: 6rem;
+}
+
+.service-footer {
+  margin-top: 27rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-image {
+    width: 80vw;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   .help-text {
     margin-right: 10rem;
   }
   .onze-text {
     max-width: 52vw;
+  }
+
+  .social-icon:nth-child(1) {
+    margin-right: 6rem;
+  }
+  .social-icon:nth-child(2) {
+    margin-left: 6rem;
+  }
+
+  .bedenken-section {
+    margin-top: var(--bs-gutter-y) !important;
+  }
+
+  .footer-contenr {
+    max-width: 70vw;
+  }
+
+  .curved-section-service {
+    margin-top: 0;
+  }
+
+  .service-footer {
+    margin-top: 0;
+  }
+  .mt-md-6 {
+    margin-top: 6rem;
+  }
+
+  .hero-desc {
+    max-width: 37vw;
+    text-align: justify;
+  }
+
+  .sub-text {
+    max-width: 50vw;
+    margin: auto;
   }
 }
