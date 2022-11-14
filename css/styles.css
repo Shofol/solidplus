@@ -8,6 +8,8 @@ html {
   --light-green: #0dcea0;
   --gray: #586482;
   --light-gray: #dee3db;
+  --orange: #ff6331;
+  --br-primary: #479cd9;
 }
 
 .bg-main {
@@ -30,7 +32,7 @@ html {
 }
 
 .btn-primary {
-  background: #479cd9 !important;
+  background: var(--br-primary) !important;
 }
 
 .btn-primary:hover {
@@ -38,11 +40,11 @@ html {
 }
 
 .text-soli-primary {
-  color: #479cd9 !important;
+  color: var(--br-primary) !important;
 }
 
 .text-orange {
-  color: #ff6331;
+  color: var(--orange);
 }
 
 .text-dark {
@@ -62,12 +64,12 @@ html {
 }
 
 .btn-outline-primary {
-  color: #479cd9 !important;
-  border-color: #479cd9 !important;
+  color: var(--br-primary) !important;
+  border-color: var(--br-primary) !important;
 }
 
 .btn-outline-primary:hover {
-  background: #479cd9 !important;
+  background: var(--br-primary) !important;
   color: white !important;
 }
 
@@ -230,6 +232,7 @@ label {
 .social-icon:nth-child(1) {
   margin-right: 6rem;
 }
+
 .social-icon:nth-child(2) {
   margin-left: 6rem;
 }
@@ -244,10 +247,18 @@ label {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 992px) {
   .help-text {
     margin-right: 10rem;
   }
+
+  .hero {
+    min-height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
   .onze-text {
     max-width: 52vw;
   }
@@ -255,6 +266,7 @@ label {
   .social-icon:nth-child(1) {
     margin-right: 6rem;
   }
+
   .social-icon:nth-child(2) {
     margin-left: 6rem;
   }
@@ -274,6 +286,7 @@ label {
   .service-footer {
     margin-top: 0;
   }
+
   .mt-md-6 {
     margin-top: 6rem;
   }
