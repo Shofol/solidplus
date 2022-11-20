@@ -258,7 +258,6 @@ label {
 }
 
 @media only screen and (min-width: 769px) {
-
   .onze-text {
     max-width: 52vw;
   }
@@ -300,4 +299,15 @@ label {
     max-width: 50vw;
     margin: auto;
   }
+}
+
+.pages {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
