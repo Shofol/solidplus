@@ -20,6 +20,7 @@ html {
   min-height: 100vh;
   background: url("/assets/images/heroBg.svg") no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero-text {
@@ -318,4 +319,10 @@ label {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
